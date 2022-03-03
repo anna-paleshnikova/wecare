@@ -11,8 +11,15 @@
     ></script>
     <title>MYKIKI</title>
   </head>
-  <body>
-    <div class="lg:flex items-center justify-between p-8">
+  <body class="font-blogger">
+    <div class="absolute top-0 inset-x-0 flex">
+      <div class="h-2 w-1/5 bg-blue-300"></div>
+      <div class="h-2 w-1/5 bg-logo"></div>
+      <div class="h-2 w-1/5 bg-green-600"></div>
+      <div class="h-2 w-1/5 bg-rose"></div>
+      <div class="h-2 w-1/5 bg-orange"></div>
+    </div>
+    <div class="lg:flex relative items-center justify-between p-8">
       <div class="lg:flex items-center w-full">
         <div class="text-center lg:w-40">
           <span class="text-logo lg:mr-24 text-4xl tracking-widest font-bold"
@@ -21,13 +28,14 @@
         </div>
         <div class="w-full lg:flex items-center lg:pl-24">
           <div class="flex flex-col mb-3 lg:mb-0 lg:mr-7">
-            <span class="text-center text-logo">Телефон за поръчки</span>
+            <a class="text-center text-logo" href="tel:">Телефон за поръчки</a>
+
             <span class="text-center text-rose font-bold">0884 77 88 99</span>
           </div>
           <div class="relative mb:6 lg:mb-0 w-full lg:max-w-12">
             <input
               placeholder="Търсене..."
-              class="text-border px-4 w-full h-10 text-sm border border-border rounded-2xl"
+              class="text-border px-4 w-full h-10 text-sm border-2 border-border rounded-2xl focus:outline-none"
             />
             <i
               class="fa-solid fa-magnifying-glass w-15 h-15 text-border absolute top-3 right-5"
@@ -39,36 +47,65 @@
         class="flex items-center justify-between mx-auto mt-5 lg:mt-0 lg:w-72"
       >
         <div class="flex items-center">
-          <img class="w-7 h-7" src="invalid-name(1).png" alt="" />
-          <span class="pl-2 text-border text-sm font-medium">Профил</span>
+          <img class="w-7 h-7" src="./images/invalid-name(1).png" alt="" />
+          <a
+            class="pl-2 text-border text-sm font-medium hover:underline"
+            href="#"
+            >Профил</a
+          >
         </div>
         <div class="flex items-center">
-          <img class="w-7 h-7" src="invalid-name@2x.png" alt="" />
-          <span class="pl-2 text-border text-sm font-medium">Любими</span>
+          <img class="w-7 h-7" src="./images/invalid-name@2x.png" alt="" />
+          <a
+            class="pl-2 text-border text-sm font-medium hover:underline"
+            href="#"
+            >Любими</a
+          >
         </div>
-        <div class="flex items-center">
-          <img class="w-7 h-7" src="basket.png" alt="" />
-        </div>
+        <a class="flex items-center relative" href="#">
+          <img class="w-7 h-7" src="./images/basket.png" alt="" />
+          <div
+            class="bg-green-700 rounded-full text-xs text-white text-center absolute top-2 left-4 w-4 h-4"
+          >
+            2
+          </div>
+        </a>
       </div>
     </div>
     <div class="lg:flex">
       <div
-        class="bg-logo w-full flex items-center py-2 pl-6 space-x-2 text-white font-semibold"
+        class="bg-logo w-full flex lg:items-center py-2 pl-2 lg:pl-6 space-x-2 text-white text-sm font-semibold"
       >
-        <a>Начало</a>
+        <a href="">Начало</a>
         <div class="w-px h-4 bg-white"></div>
-        <a>Образователни</a>
+        <a href="">Образователни</a>
         <div class="w-px h-4 bg-white"></div>
-        <a>Интерактивни</a>
+        <a
+          href="
+        "
+          >Интерактивни</a
+        >
         <div class="w-px h-4 bg-white"></div>
-        <a>Конструктуи</a>
+        <a
+          href="
+         "
+          >Конструктуи</a
+        >
         <div class="w-px h-4 bg-white"></div>
-        <a>Бебета</a>
+        <a
+          href="
+        "
+          >Бебета</a
+        >
         <div class="w-px h-4 bg-white"></div>
-        <a>Настолни игри</a>
+        <a
+          href="
+        "
+          >Настолни игри</a
+        >
       </div>
       <div
-        class="bg-orange py-2 pl-6 lg:w-100 items-center text-sm flex space-x-2 font-semibold text-logo"
+        class="bg-orange py-2 lg:pl-6 pl:2 lg:w-100 items-center text-sm flex space-x-2 font-semibold text-logo"
       >
         <a class="text-rose">% Промоции</a>
         <div class="w-px h-4 bg-white"></div>

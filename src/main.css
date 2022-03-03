@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: "BloggerSans";
+    src: url("../fonts/BloggerSans.ttf");
+  }
+  
+  
