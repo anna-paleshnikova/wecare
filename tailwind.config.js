@@ -12,7 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         "split-blue-orange":
-          "linear-gradient(to right, #1d4ed8 77% , #f5b23e 23%);",
+          "linear-gradient(to right, #2e4396 75% , #f5b23e 25%);",
         "hero-pattern": "url('/images/bg.jpg');",
       },
       width: {
