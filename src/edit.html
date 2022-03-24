@@ -141,7 +141,9 @@
       </div>
     </div>
 
-    <div class="mt-20 mx-auto max-w-6xl lg:flex font-ibm lg:space-x-6">
+    <div
+      class="mt-20 mx-auto max-w-6xl lg:flex font-ibm lg:space-x-6 text-sm pb-10"
+    >
       <div
         class="bg-white border-white rounded lg:w-314 shadow-xl mb-2 lg:mb-0"
       >
@@ -165,92 +167,83 @@
           <a class="pt-8 pb-8 hover:underline" href="">Log out</a>
         </div>
       </div>
-      <div class="bg-white border-white rounded lg:w-full shadow-2xl p-4">
-        <p class="text-left font-bold">Total Orders: 3</p>
+      <div class="bg-white border-white rounded lg:w-870 shadow-2xl p-4">
+        <p class="text-left font-bold">Редакция на профил</p>
         <div class="my-4 border-solid bg-gray h-0.5"></div>
-        <div class="md:flex justify-between items-center space-x-4">
-          <div
-            class="flex space-x-1 w-1/5 relative items-center mb-3 md:mb-none"
-          >
-            <p class="lg:pr-2">1.</p>
-            <img src="images/bitmap.png" alt="" />
-            <img src="images/bitmap.png" alt="" />
-            <div
-              class="bg-black rounded-full text-xs text-white text-center p-1 absolute -translate-x-14 translate-y-4 bottom-0 right-0 w-6 h-6"
-            >
-              +1
-            </div>
-          </div>
-          <div class="text-sm py-2">
-            <p>3 products in your order</p>
-            <p>Order No: 000546456</p>
-          </div>
-          <p class="text-newGreen">Completed</p>
-          <p class="font-bold">$67.50</p>
-
-          <a href="">
-            <div
-              class="border-rose border rounded-3xl py-2 px-6 flex text-rose font-extrabold items-center h-9 w-28 hover:bg-pink-100"
-            >
-              <span class="pr-2">DETAIL</span>
-              <p>></p>
-            </div>
-          </a>
+        <div class="flex space-x-8 pt-2">
+          <div class="w-1/2">Име</div>
+          <div class="w-1/2">Фамилия</div>
         </div>
-        <div class="my-7 border-solid bg-gray h-0.5"></div>
-        <div class="md:flex justify-between items-center space-x-4">
+        <div class="flex space-x-8 pt-2">
           <div
-            class="flex space-x-1 w-1/5 relative items-center mb-3 md:mb-none"
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
           >
-            <p class="pr-2">2.</p>
-
-            <img src="images/bitmap.png" alt="" />
+            Emily
           </div>
-
-          <div class="text-sm py-2">
-            <p>1 products in your order</p>
-            <p>Order No: 000546456</p>
+          <div
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
+          >
+            Brown
           </div>
-          <p class="text-newGreen">Completed</p>
-          <p class="font-bold">$12.00</p>
-          <a href="">
-            <div
-              class="border-rose border rounded-3xl py-2 px-6 flex text-rose font-extrabold items-center h-9 w-28 hover:bg-pink-100"
-            >
-              <span class="pr-2">DETAIL</span>
-              <p>></p>
-            </div>
-          </a>
         </div>
-        <div class="my-7 border-solid bg-gray h-0.5"></div>
-        <div class="md:flex justify-between space-x-4 items-center">
+        <div class="flex space-x-8 pt-6">
+          <div class="w-1/2">Имейл адрес</div>
+          <div class="w-1/2">Парола</div>
+        </div>
+        <div class="flex space-x-8 pt-2">
           <div
-            class="flex space-x-1 w-1/5 relative items-center mb-3 md:mb-none"
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
           >
-            <p class="pr-2">3.</p>
-            <img src="images/bitmap.png" alt="" />
-            <img src="images/bitmap.png" alt="" />
+            yourmail@mail.com
+          </div>
+          <div
+            class="relative w-400 flex justify-between items-center border border-solid bg-light rounded-3xl border-line py-2 px-4"
+          >
+            <p>********</p>
+            <img class="w-5 h-3.5" src="./images/ikn-password.png" alt="" />
+          </div>
+        </div>
 
-            <div
-              class="bg-black rounded-full text-xs text-white text-center p-1 absolute -translate-x-14 translate-y-4 bottom-0 right-0 w-6 h-6"
-            >
-              +1
-            </div>
+        <p class="text-right pt-2 underline text-sm">Смяна на парола</p>
+        <div class="flex space-x-8 pt-2">
+          <div class="w-1/2">Град</div>
+          <div class="w-1/2">Държава</div>
+        </div>
+        <div class="flex space-x-8 pt-2">
+          <select
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
+          >
+            <option value="1">Пловдив</option>
+            <option value="2">София</option>
+            <option value="3">Берлин</option>
+          </select>
+          <select
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
+          >
+            <option value="1">България</option>
+
+            <option value="2">Германия</option>
+          </select>
+        </div>
+        <div class="flex justify-between px-8 pt-8 pb-10">
+          <div class="flex items-center space-x-4">
+            <img
+              class="border border-text rounded-full p-1 w-5 h-5"
+              src="./images/check.png"
+              alt=""
+            />
+            <p class="text-text font-semibold text-sm">
+              Абонаменти за промоционални оферти
+            </p>
           </div>
-          <div class="text-sm py-2">
-            <p>5 products in your order</p>
-            <p>Order No: 000546456</p>
-          </div>
-          <p class="text-newBlue">Shipped</p>
-          <p class="font-bold">$241.00</p>
-          <a href="">
-            <div
-              class="border-rose border rounded-3xl py-2 px-6 flex text-rose font-extrabold items-center h-9 w-28 hover:bg-pink-100"
+          <div class="flex space-x-8">
+            <button class="underline hover:text-slate-500">Cancel</button>
+            <button
+              class="border rounded-3xl border-rose bg-rose px-6 py-2 w-36 h-11 hover:bg-pink-500 text-white font-bold"
             >
-              <span class="pr-2">DETAIL</span>
-              <p>></p>
-            </div>
-          </a>
+              SAVE
+            </button>
+          </div>
         </div>
       </div>
     </div>

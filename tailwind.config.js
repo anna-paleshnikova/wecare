@@ -3,10 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{html,js}"],
   mode: "jit",
   theme: {
-    letterSpacing: {
-      widest: "0.013em",
-    },
     extend: {
+      letterSpacing: {
+        widest: "0.013em",
+      },
       fontSize: {
         xxs: "0.68rem",
       },
@@ -17,6 +17,7 @@ module.exports = {
       },
       width: {
         270: "17rem",
+        400: "25rem",
         260: "16rem",
         314: "19.6rem",
         365: "22rem",
@@ -30,6 +31,7 @@ module.exports = {
         112: "52rem",
         120: "75rem",
         790: "49.4rem",
+        870: "55rem",
         666: "41.6rem",
         1400: "87.5rem",
       },
