@@ -12,10 +12,13 @@ module.exports = {
       },
       backgroundImage: {
         "split-blue-orange":
-          "linear-gradient(to right, #2e4396 75% , #f5b23e 25%);",
+          "linear-gradient(to right, #2e4396 70% , #f5b23e 30%);",
         "hero-pattern": "url('/images/bg.jpg');",
       },
       width: {
+        557: "34.813rem",
+        448: "31rem",
+        468: "29.25rem",
         270: "17rem",
         400: "25rem",
         260: "16rem",
@@ -53,6 +56,7 @@ module.exports = {
       },
       colors: {
         border: "#cdcdcd",
+        grayBlack: "#303030",
         rose: "#d01662",
         logo: "#2e4396",
         orange: "#f5b23e",
@@ -67,6 +71,9 @@ module.exports = {
         line: "#a19d9d",
         text: "#545454",
         newgray: "#f2f2f2",
+        lgreen: "#4aaf53",
+        lblack: "#363636",
+        lgr: "#777777",
         newBlue: "#4a90e2",
       },
     },

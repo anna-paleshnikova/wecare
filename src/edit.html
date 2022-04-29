@@ -175,55 +175,73 @@
           <div class="w-1/2">Фамилия</div>
         </div>
         <div class="flex space-x-8 pt-2">
-          <div
-            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
-          >
-            Emily
-          </div>
-          <div
-            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
-          >
-            Brown
-          </div>
+          <input
+            type="text"
+            placeholder="Emily"
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4 focus:outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Brown"
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4 focus:outline-none"
+          />
         </div>
         <div class="flex space-x-8 pt-6">
           <div class="w-1/2">Имейл адрес</div>
           <div class="w-1/2">Парола</div>
         </div>
         <div class="flex space-x-8 pt-2">
-          <div
-            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
-          >
-            yourmail@mail.com
-          </div>
-          <div
-            class="relative w-400 flex justify-between items-center border border-solid bg-light rounded-3xl border-line py-2 px-4"
-          >
-            <p>********</p>
-            <img class="w-5 h-3.5" src="./images/ikn-password.png" alt="" />
+          <input
+            type="text"
+            placeholder="yourmail@mail.com"
+            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4 focus:outline-none"
+          />
+
+          <div class="relative">
+            <input
+              id="passwordInput"
+              type="password"
+              class="focus:outline-none w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
+              placeholder="********"
+            />
+            <img
+              onclick="togglePassword() "
+              class="absolute right-2 top-3 w-5 h-3.5 cursor-pointer"
+              src="./images/ikn-password.png"
+              alt=""
+            />
           </div>
         </div>
 
         <p class="text-right pt-2 underline text-sm">Смяна на парола</p>
         <div class="flex space-x-8 pt-2">
-          <div class="w-1/2">Град</div>
+          <label for="cities" class="w-1/2">Град</label>
           <div class="w-1/2">Държава</div>
         </div>
         <div class="flex space-x-8 pt-2">
-          <select
-            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
-          >
-            <option value="1">Пловдив</option>
-            <option value="2">София</option>
-            <option value="3">Берлин</option>
-          </select>
-          <select
-            class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4"
-          >
-            <option value="1">България</option>
-
-            <option value="2">Германия</option>
-          </select>
+          <div class="relative">
+            <select
+              id="cities"
+              name="cities"
+              class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4 appearance-none focus:outline-none"
+            >
+              <option value="1">Пловдив</option>
+              <option value="2">София</option>
+              <option value="3">Берлин</option>
+            </select>
+            <img class="absolute right-3 top-4" src="./images/up.png" alt="" />
+          </div>
+          <div class="relative">
+            <select
+              id="cities"
+              name="cities"
+              class="w-400 border border-solid bg-light rounded-3xl border-line py-2 px-4 appearance-none focus:outline-none"
+            >
+              <option value="1">България</option>
+              <option value="2">Германия</option>
+            </select>
+            <img class="absolute right-3 top-4" src="./images/up.png" alt="" />
+          </div>
         </div>
         <div class="flex justify-between px-8 pt-8 pb-10">
           <div class="flex items-center space-x-4">
@@ -248,5 +266,15 @@
       </div>
     </div>
     <script type="module" src="./main.js"></script>
+    <script>
+      function togglePassword() {
+        let input = document.getElementById("passwordInput");
+        if (input.type === "password") {
+          input.type = "text";
+        } else {
+          input.type = "password";
+        }
+      }
+    </script>
   </body>
 </html>
