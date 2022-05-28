@@ -4,6 +4,25 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      padding: {
+        "60px": "60px",
+
+        "70px": "70px",
+      },
+      lineHeight: {
+        53: "3.313rem",
+      },
+      height: {
+        266: "16.625rem",
+        150: "9.375rem",
+        715: "44.688rem",
+        429: "26.813rem",
+        497: "31.063rem",
+        537: "33.563rem",
+        594: "37.125rem",
+        407: "25.438rem",
+        373: "23.313rem",
+      },
       letterSpacing: {
         widest: "0.013em",
       },
@@ -13,16 +32,32 @@ module.exports = {
       backgroundImage: {
         "split-blue-orange":
           "linear-gradient(to right, #2e4396 70% , #f5b23e 30%);",
+        "section-gradient":
+          "linear-gradient(90deg, #e9e9e9 23%, hsla(0, 0%, 91.4%, 0) 48%);",
         "hero-pattern": "url('/images/bg.jpg');",
+        "bg-image": "url('/images/bgimage.jpg');",
+        "girl-sidebar": "url('./images/girl.jpg')",
+        "girl-background": "url('./images/Photo-3.jpg')",
+        "children-sidebar": "url('./images/sidebar.jpg')",
+        "gray-image": "url('./images/Gray-image.jpg')",
       },
       width: {
         557: "34.813rem",
         448: "31rem",
+        302: "18.875rem",
         468: "29.25rem",
+        380: "23.75rem",
+        106: "6.625rem",
         270: "17rem",
         400: "25rem",
         260: "16rem",
+        532: "32rem",
+        434: "27.125rem",
         314: "19.6rem",
+        308: "19.25rem",
+        518: "32.375rem",
+        150: "14rem",
+
         365: "22rem",
       },
       boxShadow: {
@@ -31,11 +66,14 @@ module.exports = {
       maxWidth: {
         12: "30rem",
         15: "19rem",
+        23: "23rem",
         112: "52rem",
+        941: "58.813rem",
         120: "75rem",
         790: "49.4rem",
         870: "55rem",
         666: "41.6rem",
+
         1400: "87.5rem",
       },
 
@@ -75,6 +113,19 @@ module.exports = {
         lblack: "#363636",
         lgr: "#777777",
         newBlue: "#4a90e2",
+        socialIconsColor: "#999999",
+        socialIconsColorHoverBg: "#313131",
+        donateButtonBackground: "#1ca6ac",
+        navigationBackground: "#eeba47",
+        newOrange: "#eeba47",
+        newGray: "#f5f5f5",
+        h2: "#333",
+        orange2: "#e95500",
+        newBlue: "#1ca6ac",
+        date: "#969696",
+        test: "hsla(0, 0%, 96.1%, 0.9);",
+        hoverb: "#c68f19",
+        buttonC: "#86ba0e",
       },
     },
   },
